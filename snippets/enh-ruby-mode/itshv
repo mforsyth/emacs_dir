@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: itshv
+# key: itshv
+# --
+it { should${1:_not} have_valid(:${2:name}).when(${3:val}) }$0

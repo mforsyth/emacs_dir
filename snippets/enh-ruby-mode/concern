@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: concern
+# key: concern
+# --
+extend ActiveSupport::Concern
+
+included do
+  $0
+end

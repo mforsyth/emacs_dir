@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: shared examples for
+# key: sef
+# --
+shared_examples_for ${name} do
+  $0
+end

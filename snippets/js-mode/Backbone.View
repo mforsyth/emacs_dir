@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Backbone.View
+# key: BV
+# --
+${name} = Backbone.View.extend({
+  $0
+});

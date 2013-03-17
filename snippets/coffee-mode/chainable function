@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: chainable function
+# key: cf
+# --
+${1:name}: ${2:(${3:args})}${4: -}>
+  $0
+
+  this

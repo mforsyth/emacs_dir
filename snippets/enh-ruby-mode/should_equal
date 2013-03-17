@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: should_equal
+# key: se
+# --
+should == $0

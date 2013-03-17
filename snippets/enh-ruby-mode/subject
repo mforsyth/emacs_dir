@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: subject
+# key: s
+# --
+subject${1:(:${2:name})} { $0 }

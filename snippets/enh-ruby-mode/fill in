@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: fill in
+# key: fi
+# --
+fill_in ${field}, :with => ${content}

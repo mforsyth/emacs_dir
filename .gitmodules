@@ -1,0 +1,93 @@
+[submodule "vendor/evil"]
+	path = vendor/evil
+	url = git://gitorious.org/evil/evil.git
+[submodule "vendor/ace-jump-mode"]
+	path = vendor/ace-jump-mode
+	url = https://github.com/winterTTr/ace-jump-mode.git
+[submodule "vendor/autopair"]
+	path = vendor/autopair
+	url = git://github.com/capitaomorte/autopair.git
+[submodule "vendor/coffee-mode"]
+	path = vendor/coffee-mode
+	url = git://github.com/defunkt/coffee-mode.git
+[submodule "vendor/cucumber-el"]
+	path = vendor/cucumber-el
+	url = git://github.com/michaelklishin/cucumber.el.git
+[submodule "vendor/dizzee"]
+	path = vendor/dizzee
+	url = git://github.com/davidmiller/dizzee.git
+[submodule "vendor/enhanced-ruby-mode"]
+	path = vendor/enhanced-ruby-mode
+	url = git://github.com/zenspider/enhanced-ruby-mode.git
+[submodule "vendor/evil-numbers"]
+	path = vendor/evil-numbers
+	url = git://github.com/cofi/evil-numbers.git
+[submodule "vendor/evil-surround"]
+	path = vendor/evil-surround
+	url = git://github.com/timcharper/evil-surround
+[submodule "vendor/fill-column-indicator"]
+	path = vendor/fill-column-indicator
+	url = git://github.com/emacsmirror/fill-column-indicator.git
+[submodule "vendor/gh.el"]
+	path = vendor/gh.el
+	url = git://github.com/sigma/gh.el
+[submodule "vendor/gist-el"]
+	path = vendor/gist-el
+	url = git://github.com/defunkt/gist.el
+[submodule "vendor/haml-mode"]
+	path = vendor/haml-mode
+	url = git://github.com/nex3/haml-mode.git
+[submodule "vendor/haskell-mode"]
+	path = vendor/haskell-mode
+	url = git://github.com/emacsmirror/haskell-mode.git
+[submodule "vendor/helm"]
+	path = vendor/helm
+	url = https://github.com/emacs-helm/helm.git
+[submodule "vendor/helm-ls-git"]
+	path = vendor/helm-ls-git
+	url = git://github.com/emacs-helm/helm-ls-git.git
+[submodule "vendor/inf-ruby"]
+	path = vendor/inf-ruby
+	url = git://github.com/nonsequitur/inf-ruby
+[submodule "vendor/logito"]
+	path = vendor/logito
+	url = git://github.com/sigma/logito
+[submodule "vendor/magit"]
+	path = vendor/magit
+	url = git://github.com/magit/magit.git
+[submodule "vendor/markdown-mode"]
+	path = vendor/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
+[submodule "vendor/mode-compile"]
+	path = vendor/mode-compile
+	url = git://github.com/emacsmirror/mode-compile.git
+[submodule "vendor/multi-web-mode"]
+	path = vendor/multi-web-mode
+	url = git://github.com/fgallina/multi-web-mode
+[submodule "vendor/org-mode"]
+	path = vendor/org-mode
+	url = git://orgmode.org/org-mode.git
+[submodule "vendor/pcache"]
+	path = vendor/pcache
+	url = git://github.com/sigma/pcache
+[submodule "vendor/popup-el"]
+	path = vendor/popup-el
+	url = git://github.com/auto-complete/popup-el.git
+[submodule "vendor/rainbow-mode"]
+	path = vendor/rainbow-mode
+	url = git://github.com/emacsmirror/rainbow-mode
+[submodule "vendor/rspec-mode"]
+	path = vendor/rspec-mode
+	url = git://github.com/pezra/rspec-mode.git
+[submodule "vendor/sass-mode"]
+	path = vendor/sass-mode
+	url = git://github.com/nex3/sass-mode.git
+[submodule "vendor/undo-tree"]
+	path = vendor/undo-tree
+	url = git://github.com/emacsmirror/undo-tree.git
+[submodule "vendor/wgrep"]
+	path = vendor/wgrep
+	url = git://github.com/mhayashi1120/Emacs-wgrep.git
+[submodule "vendor/yasnippet"]
+	path = vendor/yasnippet
+	url = git://github.com/capitaomorte/yasnippet.git

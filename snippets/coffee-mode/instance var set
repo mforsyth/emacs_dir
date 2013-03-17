@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: instance var set
+# key: @
+# --
+@${1:name} = $1

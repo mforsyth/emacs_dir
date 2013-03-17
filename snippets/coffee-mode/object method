@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: object method
+# key: f
+# --
+${1:name}: ${2:(${3:args}) }${4:-}>
+  $0

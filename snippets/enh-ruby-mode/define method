@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: define method
+# key: dm
+# --
+define_method ${1:name} do ${2:|${3:args}|}
+  $0
+end

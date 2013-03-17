@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: lazy_attr
+# key: la
+# --
+def ${1:name}
+  @$1 ||= $0
+end

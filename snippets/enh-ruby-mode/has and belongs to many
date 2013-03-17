@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: has and belongs to many
+# key: habtm
+# --
+has_and_belongs_to_many $0

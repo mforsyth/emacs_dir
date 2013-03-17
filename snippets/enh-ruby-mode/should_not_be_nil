@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: should_not_be_nil
+# key: snbn
+# --
+should_not be_nil

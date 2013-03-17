@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: property function returning this
+# key: pft
+# --
+${1:name}: function($2) {
+  $0
+
+  return this;
+}

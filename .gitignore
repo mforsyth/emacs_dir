@@ -1,0 +1,8 @@
+*.elc
+/session.*
+/auto-save-list/
+/.org-id-locations
+\#*#
+/tramp
+ac-comphist.dat
+/var

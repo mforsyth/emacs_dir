@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: OpenStruct
+# key: os
+# --
+OpenStruct.new($0)

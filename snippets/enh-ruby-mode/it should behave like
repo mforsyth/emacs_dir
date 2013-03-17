@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: it should behave like
+# key: isbl
+# --
+it_should_behave_like '$0'

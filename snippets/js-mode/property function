@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: property function
+# key: pf
+# --
+${1:name}: function($2) {
+  $0
+},

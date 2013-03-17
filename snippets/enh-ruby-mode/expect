@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: expect
+# key: e
+# --
+expect(${1:`yas/selected-text`}).to${2:_not} $0

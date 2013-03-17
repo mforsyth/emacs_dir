@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: @var = var
+# key: @
+# --
+@${1:variable} = $1

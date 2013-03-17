@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: backbone router
+# key: BR
+# --
+${1:name} = Backbone.Router.extend({
+  routes: {
+    $0
+  },
+});
+
+new $1;

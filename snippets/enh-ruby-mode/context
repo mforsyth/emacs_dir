@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: context
+# key: ctx
+# --
+context ${desc} do
+  $0
+end
