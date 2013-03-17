@@ -21,7 +21,6 @@
 (define-key evil-normal-state-map "\M-." 'helm-c-etags-select)
 (define-key evil-normal-state-map "|" 'align)
 (define-key evil-normal-state-map "\\" 'evil-buffer)
-(define-key evil-normal-state-map "\C-[" 'evil-force-normal-state)
 
 (define-key evil-visual-state-map "+" 'universal-argument)
 (define-key evil-visual-state-map "-" 'negative-argument)
