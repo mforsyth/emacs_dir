@@ -91,3 +91,15 @@
 [submodule "vendor/yasnippet"]
 	path = vendor/yasnippet
 	url = git://github.com/capitaomorte/yasnippet.git
+[submodule "vendor/nrepl.el"]
+	path = vendor/nrepl.el
+	url = git://github.com/kingtim/nrepl.el.git
+[submodule "vendor/clojure-mode"]
+	path = vendor/clojure-mode
+	url = git://github.com/technomancy/clojure-mode.git
+[submodule "vendor/paredit"]
+	path = vendor/paredit
+	url = git://github.com/emacsmirror/paredit.git
+[submodule "vendor/rainbow-delimiters"]
+	path = vendor/rainbow-delimiters
+	url = git://github.com/jlr/rainbow-delimiters.git
