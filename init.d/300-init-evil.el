@@ -1,4 +1,5 @@
 (require 'evil)
+(require 'surround)
 
 (setq-default evil-shift-width 2)
 (setq evil-cross-lines t)
@@ -30,3 +31,5 @@
 (evil-set-initial-state 'inferior-ruby-mode 'emacs)
 (evil-set-initial-state 'magit-commit-mode 'emacs)
 (evil-set-initial-state 'magit-branch-manager-mode 'emacs)
+
+(global-surround-mode 1)
