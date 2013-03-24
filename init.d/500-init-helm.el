@@ -1,6 +1,7 @@
 (require 'helm-config)
 (require 'helm-match-plugin)
 (require 'helm-ls-git)
+(require 'helm-files)
 
 (setq helm-ls-git-show-abs-or-relative 'relative)
 
@@ -9,7 +10,11 @@
 
 (helm-mode 1)
 
-(defun helm-in-default-git-project ()
+(defun helm-with-project ()
   (interactive)
-  (let ((default-directory command-line-default-directory))
-    (helm-ls-git-ls)))
+  (helm-other-buffer '(helm-source-buffers-list
+                       helm-source-ls-git-status
+                       helm-source-ls-git
+                       helm-source-recentf
+                       helm-source-buffer-not-found)
+                     "*helm with project"))
