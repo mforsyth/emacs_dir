@@ -17,11 +17,9 @@
   (define-key mode "d" 'magit-discard-item))
 
 (add-to-list 'display-buffer-alist
-             `("^\\*magit-commit\\*$" .
-               ,init/open-buffer-in-frame-no-switch) t)
+             `("^\\*magit-commit\\*$" . ,init/open-buffer-in-frame) t)
 (add-to-list 'display-buffer-alist
-             `("^\\*magit-stash\\*$" .
-               ,init/open-buffer-in-frame-no-switch) t)
+             `("^\\*magit-stash\\*$" . ,init/open-buffer-in-frame) t)
 (add-to-list 'display-buffer-alist
              `("^\\*magit-log\\*$" . ,init/open-buffer-in-frame) t)
 (add-to-list 'display-buffer-alist
