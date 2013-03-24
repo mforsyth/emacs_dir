@@ -29,7 +29,7 @@
 (setq inhibit-startup-screen t)
 (setq kill-ring-max 1000)
 (setq make-backup-files nil)
-(setq recentf-max-saved-items 1000)
+(setq recentf-max-saved-items 500)
 (setq scroll-conservatively 1000)
 (setq x-select-enable-clipboard t)
 
