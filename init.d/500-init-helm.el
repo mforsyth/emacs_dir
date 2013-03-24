@@ -10,6 +10,8 @@
 
 (helm-mode 1)
 
+(define-key helm-map "\C-w" 'backward-kill-word)
+
 (defun helm-with-project ()
   (interactive)
   (helm-other-buffer '(helm-source-buffers-list
