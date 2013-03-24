@@ -5,6 +5,7 @@
 (global-set-key "\M-i" 'indent-relative)
 (global-set-key "\C-cf" 'vc-git-grep)
 (global-set-key "\C-cg" 'magit-status)
+(global-set-key "\C-cc" 'display-compilation)
 
 (global-set-key "\C-cs" 'default-term)
 

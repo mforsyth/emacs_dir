@@ -63,3 +63,7 @@
  (lambda ()
    (with-current-buffer "*scratch*"
      (hack-dir-local-variables-non-file-buffer))))
+
+(defun display-compilation ()
+  (interactive)
+  (display-buffer "*compilation*"))
