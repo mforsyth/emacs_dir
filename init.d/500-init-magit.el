@@ -3,8 +3,6 @@
 (setq magit-revert-item-confirm t)
 (setq magit-repo-dirs '("~/projects/"))
 
-(add-to-list 'same-window-regexps "^\\*magit:")
-
 (dolist (mode
          (list magit-log-mode-map
                magit-status-mode-map
@@ -26,6 +24,8 @@
                ,init/open-buffer-in-frame-no-switch) t)
 (add-to-list 'display-buffer-alist
              `("^\\*magit-log\\*$" . ,init/open-buffer-in-frame) t)
+(add-to-list 'display-buffer-alist
+             `("^\\*magit:" . ,init/open-buffer-in-frame) t)
 
 (set-face-attribute 'diff-removed nil :background "#ff4444" :foreground "#000000")
 (set-face-attribute 'diff-added nil :background "#115511" :foreground "#ffffff")
