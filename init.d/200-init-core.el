@@ -1,4 +1,6 @@
 (require 'uniquify)
+(require 'diff-mode)
+(require 'vc-git)
 
 ;; Variables
 (setq-default indent-tabs-mode nil)
@@ -34,6 +36,8 @@
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
 (set-face-attribute 'default nil :height 90 :family "Ubuntu Mono")
+(set-face-attribute 'diff-removed nil :background "#ff4444" :foreground "#000000")
+(set-face-attribute 'diff-added nil :background "#115511" :foreground "#ffffff")
 
 (add-to-list 'display-buffer-alist
              `("*compilation*" . ,init/open-buffer-in-frame))

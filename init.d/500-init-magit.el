@@ -25,9 +25,6 @@
 (add-to-list 'display-buffer-alist
              `("^\\*magit:" . ,init/open-buffer-in-frame) t)
 
-(set-face-attribute 'diff-removed nil :background "#ff4444" :foreground "#000000")
-(set-face-attribute 'diff-added nil :background "#115511" :foreground "#ffffff")
-
 (defun magit-setup ()
   (interactive)
   (let ((current (current-buffer))
