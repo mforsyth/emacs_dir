@@ -1,3 +1,1 @@
-(require 'autopair)
-
-(autopair-global-mode 1)
+(autoload 'autopair-mode "autopair")

@@ -44,3 +44,4 @@
 
 ;; Init hooks
 (add-hook 'enh-ruby-mode-hook 'fci-mode)
+(add-hook 'enh-ruby-mode-hook 'autopair-mode)
