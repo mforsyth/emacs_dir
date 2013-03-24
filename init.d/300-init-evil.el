@@ -3,6 +3,7 @@
 (setq-default evil-shift-width 2)
 (setq evil-cross-lines t)
 (setq evil-emacs-state-cursor '("orange" bar))
+(setq evil-intercept-esc 'always)
 
 (evil-mode 1)
 
@@ -12,7 +13,6 @@
 (define-key evil-insert-state-map "\C-k" 'kill-line)
 (define-key evil-insert-state-map "\C-y" 'yank)
 (define-key evil-insert-state-map "\C-d" 'delete-char)
-(define-key evil-insert-state-map "\C-[" 'evil-force-normal-state)
 
 (define-key evil-normal-state-map "+" 'universal-argument)
 (define-key evil-normal-state-map "-" 'negative-argument)
