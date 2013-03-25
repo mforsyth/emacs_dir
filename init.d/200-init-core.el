@@ -35,7 +35,7 @@
 
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
-(set-face-attribute 'default nil :height 90 :family "Ubuntu Mono")
+(set-face-attribute 'default nil :height 105 :family "Ubuntu Mono")
 (set-face-attribute 'diff-removed nil :background "#ff4444" :foreground "#000000")
 (set-face-attribute 'diff-added nil :background "#115511" :foreground "#ffffff")
 
