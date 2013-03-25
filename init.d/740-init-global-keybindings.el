@@ -12,6 +12,7 @@
 (global-set-key "\C-cc" 'display-console)
 (global-set-key "\C-cp" 'display-compilation)
 (global-set-key "\C-cs" 'eshell)
+(global-set-key "\C-ck" 'display-clock)
 
 (global-set-key "\C-ct" 'touch)
 
