@@ -4,7 +4,6 @@
 (setq nrepl-popup-stacktraces nil)
 (setq nrepl-popup-stacktraces-in-repl t)
 
-(add-hook 'clojure-mode-hook (lambda () (autopair-mode -1)))
 (add-hook 'clojure-mode-hook 'paredit-mode)
 
 (add-hook 'nrepl-mode-hook (lambda () (autopair-mode -1)))
