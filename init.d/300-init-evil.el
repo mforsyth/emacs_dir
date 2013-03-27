@@ -26,6 +26,8 @@
 (define-key evil-visual-state-map "+" 'universal-argument)
 (define-key evil-visual-state-map "-" 'negative-argument)
 
+(define-key evil-emacs-state-map "\C-w" 'evil-delete-backward-word)
+
 (evil-set-initial-state 'grep-mode 'emacs)
 (evil-set-initial-state 'term-mode 'emacs)
 (evil-set-initial-state 'inferior-ruby-mode 'emacs)
