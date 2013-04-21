@@ -5,3 +5,4 @@
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
 (add-hook 'feature-mode-hook 'auto-fill-mode)
+(add-hook 'feature-mode-hook 'fci-mode)
