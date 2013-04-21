@@ -7,6 +7,7 @@
          (list magit-log-mode-map
                magit-status-mode-map
                magit-commit-mode-map
+               magit-diff-mode-map
                magit-branch-manager-mode-map))
   (define-key mode "j" 'magit-goto-next-section)
   (define-key mode "k" 'magit-goto-previous-section)
