@@ -32,6 +32,7 @@
 (setq recentf-max-saved-items 500)
 (setq scroll-conservatively 1000)
 (setq x-select-enable-clipboard t)
+(setq pop-up-frames t)
 
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
@@ -40,11 +41,11 @@
 (set-face-attribute 'diff-added nil :background "#115511" :foreground "#ffffff")
 
 (add-to-list 'display-buffer-alist
-             `("*compilation*" . ,init/open-buffer-in-frame))
+             '("^\\*Warning\\*$" . (display-buffer-pop-up-window . nil)))
 (add-to-list 'display-buffer-alist
-             `("*Async" . ,init/open-buffer-in-frame))
+             '("^\\*Org Clock\\*$" . (display-buffer-pop-up-window . nil)))
 (add-to-list 'display-buffer-alist
-             `("*grep*" . ,init/open-buffer-in-frame))
+             '("^\\*Completions\\*$" . (display-buffer-pop-up-window . nil)))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
