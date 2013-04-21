@@ -6,6 +6,8 @@
    (directory-file-name command-line-default-directory))
   "The name of the current rails project")
 
+(add-to-list 'inf-ruby-implementations '("rails" . "rails console"))
+
 (global-set-key "\C-ccd" 'rails/console-development)
 (global-set-key "\C-ccs" 'rails/console-staging)
 (global-set-key "\C-ccp" 'rails/console-production)
@@ -18,7 +20,7 @@
 
 (defun rails/console-development ()
   (interactive)
-  (rails/eval '(inf-ruby "development")))
+  (rails/eval '(inf-ruby "rails")))
 
 (defun rails/console-staging ()
   (interactive)
