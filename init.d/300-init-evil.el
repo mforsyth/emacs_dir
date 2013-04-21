@@ -19,7 +19,7 @@
 (define-key evil-normal-state-map "-" 'negative-argument)
 (define-key evil-normal-state-map "\C-u" 'evil-scroll-up)
 (define-key evil-normal-state-map "\M-," 'helm-imenu)
-(define-key evil-normal-state-map "\M-." 'helm-c-etags-select)
+(define-key evil-normal-state-map "\M-." 'helm-etags-select)
 (define-key evil-normal-state-map "|" 'align)
 (define-key evil-normal-state-map "\\" 'evil-buffer)
 
