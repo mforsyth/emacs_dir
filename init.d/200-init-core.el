@@ -72,3 +72,5 @@
 (defun display-clock ()
   (interactive)
   (find-file-other-frame (expand-file-name "~/.clock.org")))
+
+(define-key minibuffer-local-map "\C-w" 'backward-kill-word)
