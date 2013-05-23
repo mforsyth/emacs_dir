@@ -14,7 +14,7 @@
 (setq org-clock-report-include-clocking-task t)
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (setq org-log-into-drawer t)
-(setq org-log-note-clock-out t)
+(setq org-log-note-clock-out nil)
 (setq org-mobile-directory "~/Dropbox/MobileOrg/")
 (setq org-mobile-inbox-for-pull "~/org/mobile-notes.org")
 (setq org-startup-folded 'content)
