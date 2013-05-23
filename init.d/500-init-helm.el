@@ -15,6 +15,7 @@
 (defun helm-with-project ()
   (interactive)
   (helm-other-buffer '(helm-source-buffers-list
+                       helm-source-ido-virtual-buffers
                        helm-source-ls-git-status
                        helm-source-ls-git
                        helm-source-recentf
