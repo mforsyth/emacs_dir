@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: def_lazy
+# key: d@
+# --
+def ${1:name}
+  @$1 ||= $0
+end
