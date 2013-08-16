@@ -11,6 +11,7 @@
 (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.watchr$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rjs$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rabl$" . enh-ruby-mode))
 
 (add-to-list 'special-display-buffer-names "*rake*")
 (add-to-list 'same-window-buffer-names "*ruby*")
