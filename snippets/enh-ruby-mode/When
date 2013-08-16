@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: When
+# key: W
+# --
+When(/^$1$/) do ${2:|$3|}
+  $0
+end
