@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: do |args| .. end
-# key: doa
-# --
-do |$1|
-  $0
-end

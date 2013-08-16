@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: have valid
-# key: hv
-# --
-it { should${1:_not} have_valid(${2:field}).when(${3:value}) }

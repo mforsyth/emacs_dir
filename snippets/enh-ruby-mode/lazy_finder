@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: lazy_finder
-# key: lf
-# --
-def ${1:name}
-  @$1 ||= ${klass}.find(${var})
-end

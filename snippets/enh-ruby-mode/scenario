@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: scenario
-# key: sc
-# --
-scenario "${description}" do
-  $0
-end

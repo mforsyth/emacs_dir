@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: finder
-# key: f
-# --
-${class}.find(${var})
