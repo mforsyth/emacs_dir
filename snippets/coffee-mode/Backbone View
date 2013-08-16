@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: Backbone View
-# key: V
-# --
-class ${name} extends Backbone.View
-$0
