@@ -33,6 +33,5 @@
 (evil-set-initial-state 'inferior-ruby-mode 'emacs)
 (evil-set-initial-state 'magit-commit-mode 'emacs)
 (evil-set-initial-state 'magit-branch-manager-mode 'emacs)
-(evil-set-initial-state 'nrepl-mode 'emacs)
 
 (global-surround-mode 1)
