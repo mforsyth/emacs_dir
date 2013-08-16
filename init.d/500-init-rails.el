@@ -7,28 +7,12 @@
   "The name of the current rails project")
 
 (global-set-key "\C-ccd" 'inf-ruby-console-auto)
-(global-set-key "\C-ccs" 'rails/console-staging)
-(global-set-key "\C-ccp" 'rails/console-production)
 
 (global-set-key "\C-cla" 'rails/log-acceptance-test)
 (global-set-key "\C-clt" 'rails/log-test)
 (global-set-key "\C-cld" 'rails/log-development)
 
 (global-set-key "\C-cq"  'rails/sql)
-
-(defun rails/console-development ()
-  (interactive)
-  (rails/eval '(inf-ruby "rails")))
-
-(defun rails/console-staging ()
-  (interactive)
-  (rails/eval
-    '(heroku/console (concat rails/project-name "-staging") "staging")))
-
-(defun rails/console-production ()
-  (interactive)
-  (rails/eval
-    '(heroku/console (concat rails/project-name ) "production")))
 
 (defun rails/log-development ()
   (interactive)
