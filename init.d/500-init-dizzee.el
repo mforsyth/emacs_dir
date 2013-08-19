@@ -1,7 +1,7 @@
 (require 'dizzee)
 
-(dz-defservice guard "bundle"
-               :args ("exec" "guard")
+(dz-defservice guard "guard"
+               :args ("--no-bundler-warning")
                :cd command-line-default-directory)
 
 (dz-defservice zeus "zeus-wrapper"
