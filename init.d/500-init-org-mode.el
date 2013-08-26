@@ -8,7 +8,7 @@
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-span 'day)
 (setq org-clock-idle-time 10)
-(setq org-clock-in-resume t)
+(setq org-clock-in-resume nil)
 (setq org-clock-modeline-total 'today)
 (setq org-clock-persist t)
 (setq org-clock-report-include-clocking-task t)
