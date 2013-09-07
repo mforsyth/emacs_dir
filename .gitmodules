@@ -103,3 +103,6 @@
 [submodule "vendor/rainbow-delimiters"]
 	path = vendor/rainbow-delimiters
 	url = git://github.com/jlr/rainbow-delimiters.git
+[submodule "vendor/git-modes"]
+	path = vendor/git-modes
+	url = git://github.com/magit/git-modes.git
