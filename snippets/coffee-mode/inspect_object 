@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: inspect object
+# key: cli
+# --
+
+console.log JSON.stringify($0)
