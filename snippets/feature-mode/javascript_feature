@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: javascript feature
+# key: jf
+# --
+@javascript
+Feature: $0
