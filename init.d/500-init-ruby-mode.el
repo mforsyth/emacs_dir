@@ -45,6 +45,10 @@
                       (file-writable-p buffer-file-name))
 		 (flymake-mode))))
 
+(add-hook 'enh-ruby-mode-hook
+          '(lambda ()
+             (define-key enh-ruby-mode-map (kbd "RET") 'newline-and-indent)))
+
 ;; Init hooks
 (add-hook 'enh-ruby-mode-hook 'fci-mode)
 (add-hook 'enh-ruby-mode-hook 'autopair-mode)

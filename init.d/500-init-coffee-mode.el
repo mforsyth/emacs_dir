@@ -10,3 +10,7 @@
 
 (add-hook 'coffee-mode-hook 'fci-mode)
 (add-hook 'coffee-mode-hook 'autopair-mode)
+
+(add-hook 'coffee-mode-hook
+          '(lambda ()
+             (define-key coffee-mode-map (kbd "RET") 'newline-and-indent)))
