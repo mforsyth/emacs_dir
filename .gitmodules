@@ -4,9 +4,6 @@
 [submodule "vendor/ace-jump-mode"]
 	path = vendor/ace-jump-mode
 	url = https://github.com/winterTTr/ace-jump-mode.git
-[submodule "vendor/autopair"]
-	path = vendor/autopair
-	url = git://github.com/capitaomorte/autopair.git
 [submodule "vendor/coffee-mode"]
 	path = vendor/coffee-mode
 	url = git://github.com/defunkt/coffee-mode.git
@@ -106,3 +103,9 @@
 [submodule "vendor/git-modes"]
 	path = vendor/git-modes
 	url = git://github.com/magit/git-modes.git
+[submodule "vendor/smartparens"]
+	path = vendor/smartparens
+	url = git://github.com/Fuco1/smartparens.git
+[submodule "vendor/dash.el"]
+	path = vendor/dash.el
+	url = git://github.com/magnars/dash.el.git

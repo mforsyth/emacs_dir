@@ -17,7 +17,6 @@
    (define-key term-raw-map (kbd "C-<backspace>") 'term-send-raw-meta)
    ;(define-key term-raw-map (kbd "C-c c") 'rails/console)
    ;(define-key term-raw-map (kbd "C-c r") 'rails/guard)
-
-   (autopair-mode -1)))
+))
 
   ;(show-buffer-or-exec "*ansi-term*" (ansi-term "/bin/zsh")))
