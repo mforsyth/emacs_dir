@@ -1,6 +1,6 @@
 (require 'feature-mode)
 
-(setq feature-cucumber-command "zeus cucumber -rfeatures -P -f pretty {options} {feature}")
+(setq feature-cucumber-command "bin/cucumber -rfeatures -P -f pretty {options} {feature}")
 
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
