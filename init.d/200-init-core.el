@@ -74,3 +74,9 @@
   (find-file-other-frame (expand-file-name "~/.clock.org")))
 
 (define-key minibuffer-local-map "\C-w" 'backward-kill-word)
+
+; (defadvice raise-frame (around wmctrl activate)
+;  (if (eq (window-system (ad-get-arg 0)) 'x)
+;      (x-send-client-message nil 0 (ad-get-arg 0)
+;                             "_NET_ACTIVE_WINDOW" 32 '(1))
+;    ad-do-it))
