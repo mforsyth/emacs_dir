@@ -109,3 +109,15 @@
 [submodule "vendor/dash.el"]
 	path = vendor/dash.el
 	url = git://github.com/magnars/dash.el.git
+[submodule "vendor/auto-complete"]
+	path = vendor/auto-complete
+	url = git://github.com/auto-complete/auto-complete.git
+[submodule "vendor/powerline"]
+	path = vendor/powerline
+	url = git://github.com/jonathanchu/emacs-powerline.git
+[submodule "vendor/multiple-cursors"]
+	path = vendor/multiple-cursors
+	url = git://github.com/magnars/multiple-cursors.el
+[submodule "vendor/expand-region"]
+	path = vendor/expand-region
+	url = git://github.com/magnars/expand-region.el
