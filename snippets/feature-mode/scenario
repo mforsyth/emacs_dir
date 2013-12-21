@@ -2,4 +2,4 @@
 # name: scenario
 # key: s
 # --
-Scenario:
+Scenario: $0
