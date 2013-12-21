@@ -93,7 +93,7 @@
 	url = git://github.com/kingtim/nrepl.el.git
 [submodule "vendor/clojure-mode"]
 	path = vendor/clojure-mode
-	url = git://github.com/technomancy/clojure-mode.git
+	url = git://github.com/clojure-emacs/clojure-mode.git
 [submodule "vendor/paredit"]
 	path = vendor/paredit
 	url = git://github.com/emacsmirror/paredit.git
@@ -115,3 +115,12 @@
 [submodule "vendor/expand-region"]
 	path = vendor/expand-region
 	url = git://github.com/magnars/expand-region.el
+[submodule "vendor/cider"]
+	path = vendor/cider
+	url = git://github.com/clojure-emacs/cider.git
+[submodule "vendor/pkg-info"]
+	path = vendor/pkg-info
+	url = git://github.com/lunaryorn/pkg-info.el
+[submodule "vendor/epl"]
+	path = vendor/epl
+	url = git://github.com/cask/epl
