@@ -1,0 +1,8 @@
+alias gdm
+alias gm z g migration $*
+alias r rails $*
+alias z zeus $*
+alias k zeus rake $*
+alias dm k db:migrate db:test:prepare
+alias ddp k deploy:production $*
+alias dds k deploy:staging $*
