@@ -14,3 +14,13 @@
 (dz-defservice-group rails-project (rails-server guard zeus))
 
 (dz-defservice-group gem-project (guard))
+
+(dz-defservice ring-server "lein"
+               :args ("ring" "server")
+               :cd command-line-default-directory)
+
+(dz-defservice cljsbuild "lein"
+               :args ("cljsbuild" "auto")
+               :cd command-line-default-directory)
+
+(dz-defservice-group cljx-project (ring-server cljsbuild))
