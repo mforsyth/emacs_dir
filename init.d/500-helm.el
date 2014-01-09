@@ -8,6 +8,8 @@
 (setq helm-buffer-max-length 55)
 (setq helm-ff-transformer-show-only-basename nil)
 
+(setq helm-ff-auto-update-initial-value t)
+
 (helm-mode 1)
 
 (define-key helm-map "\C-w" 'backward-kill-word)
