@@ -10,6 +10,9 @@
 
 (setq helm-ff-auto-update-initial-value t)
 
+(setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %p %f")
+(setq helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %p %f")
+
 (helm-mode 1)
 
 (define-key helm-map "\C-w" 'backward-kill-word)
