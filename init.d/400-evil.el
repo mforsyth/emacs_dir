@@ -33,6 +33,12 @@
 (define-key git-rebase-mode-map "j" 'forward-line)
 (define-key git-rebase-mode-map "k" 'git-rebase-backward-line)
 
+;; === Ace Jump
+
+(define-key evil-motion-state-map (kbd "SPC") 'evil-ace-jump-word-mode)
+(define-key evil-motion-state-map (kbd "C-SPC") 'evil-ace-jump-line-mode)
+(define-key evil-motion-state-map (kbd "S-SPC") 'evil-ace-jump-char-mode)
+
 ;; === Evil ===
 
 (setq evil-emacs-state-cursor '("orange" bar))
