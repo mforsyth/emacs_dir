@@ -48,6 +48,7 @@
 (global-hl-line-mode 1)
 (line-number-mode 1)
 (show-paren-mode 1)
+(fringe-mode '(0 . 4))
 
 ;; Hooks
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
