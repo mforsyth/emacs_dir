@@ -42,6 +42,7 @@
 (define-key evil-normal-state-map "+" 'universal-argument)
 (define-key evil-normal-state-map "-" 'negative-argument)
 (define-key evil-normal-state-map "\C-u" 'evil-scroll-up)
+(define-key evil-normal-state-map "g/" 'my/helm-recursive-grep)
 
 (define-key evil-visual-state-map "+" 'universal-argument)
 (define-key evil-visual-state-map "-" 'negative-argument)

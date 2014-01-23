@@ -26,3 +26,8 @@
                        helm-source-recentf
                        helm-source-buffer-not-found)
                      "*helm with project"))
+
+(defun my/helm-recursive-grep ()
+  (interactive)
+  (let ((current-prefix-arg t))
+    (helm-do-grep)))
