@@ -127,3 +127,6 @@
 [submodule "init.d/vendor/evil-surround"]
 	path = init.d/vendor/evil-surround
 	url = git://github.com/timcharper/evil-surround.git
+[submodule "vendor/base16-emacs"]
+	path = vendor/base16-emacs
+	url = git://github.com/neil477/base16-emacs.git

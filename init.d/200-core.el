@@ -1,6 +1,7 @@
 (require 'uniquify)
 (require 'diff-mode)
 (require 'vc-git)
+(require 'base16-default-theme)
 
 ;; Variables
 (setq-default indent-tabs-mode nil)
@@ -14,13 +15,7 @@
 (setq initial-frame-alist
       (setq default-frame-alist '((menu-bar-lines . 0)
 				  (tool-bar-lines . 0)
-				  ; (background-color . "#181818")
-				  (background-mode . dark)
-				  (border-color . "black")
-				  (cursor-color . "white")
-                                  ; (cursor-type . bar)
-				  (vertical-scroll-bars . nil)
-				  (foreground-color . "white"))))
+				  (vertical-scroll-bars . nil))))
 
 (setq-default fill-column 80)
 (setq-default indent-tabs-mode nil)
@@ -37,8 +32,6 @@
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
 (set-face-attribute 'default nil :height 105 :family "Ubuntu Mono")
-(set-face-attribute 'diff-removed nil :background "#ff4444" :foreground "#000000")
-(set-face-attribute 'diff-added nil :background "#115511" :foreground "#ffffff")
 
 (add-to-list 'display-buffer-alist
              '("^\\*Warning\\*$" . (display-buffer-pop-up-window . nil)))
