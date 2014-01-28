@@ -130,3 +130,6 @@
 [submodule "vendor/base16-emacs"]
 	path = vendor/base16-emacs
 	url = git://github.com/neil477/base16-emacs.git
+[submodule "vendor/wanderlust"]
+	path = vendor/wanderlust
+	url = git://github.com/wanderlust/wanderlust.git
