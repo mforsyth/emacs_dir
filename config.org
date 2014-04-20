@@ -1,0 +1,218 @@
+* Literate Emacs config
+
+  I don't use package.el or el-get, or anything like it. git submodules have
+  been enough so far.
+
+  I don't use Customize, because I think it makes it harder to organize
+  customizations.
+
+  I use one Emacs instance per project.
+
+** Core
+
+   Disable Emacs' "splash screen"
+
+   #+BEGIN_SRC emacs-lisp
+     (setq inhibit-startup-screen t)
+   #+END_SRC
+
+   Never make backups.
+
+   #+BEGIN_SRC emacs-lisp
+     (setq make-backup-files nil)
+   #+END_SRC
+
+   Use a nice themes.
+
+   #+BEGIN_SRC emacs-lisp
+     (require 'base16-default-theme)
+   #+END_SRC
+
+*** Frame configuration
+
+    I don't need menus, toolbars and scrollbars.
+
+    The cursor should stay between characters instead of over a character.
+
+    #+BEGIN_SRC emacs-lisp
+      (setq initial-frame-alist
+            (setq default-frame-alist '((menu-bar-lines . 0)
+                                        (tool-bar-lines . 0)
+                                        (vertical-scroll-bars . nil)
+                                        (cursor-type . bar))))
+    #+END_SRC
+
+    Don't want the cursor to blink.
+
+    #+BEGIN_SRC emacs-lisp
+      (blink-cursor-mode -1)
+    #+END_SRC
+
+    Use a single fringe (the vertical bar on the side of an emacs frame).
+
+    #+BEGIN_SRC emacs-lisp
+      (fringe-mode '(0 . 4))
+    #+END_SRC
+
+    Use a nice font and size it appropriately.
+
+    #+BEGIN_SRC emacs-lisp
+      (set-face-attribute 'default nil :height 100 :family "Envy Code R")
+    #+END_SRC
+
+**** Navigation
+
+     Since I disabled scrollbars, I'd like at least to see where I am in the
+     file.
+
+     #+BEGIN_SRC emacs-lisp
+       (column-number-mode 1)
+       (line-number-mode 1)
+     #+END_SRC
+
+*** Minibuffer
+
+    Disambiguate file names. This will show files in a format like
+    =name<dir/subdir>=.
+
+    #+BEGIN_SRC emacs-lisp
+      (require 'uniquify)
+
+      (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+    #+END_SRC
+
+    Make it easier to answer yes/no questions.
+
+    #+BEGIN_SRC emacs-lisp
+      (defalias 'yes-or-no-p 'y-or-n-p)
+    #+END_SRC
+
+**** Keybindings
+
+     Use =C-w= to erase words.
+
+     #+BEGIN_SRC emacs-lisp
+       (define-key minibuffer-local-map "\C-w" 'backward-kill-word)
+     #+END_SRC
+
+*** Buffer selection
+
+    Show frames by default.
+
+    #+BEGIN_SRC emacs-lisp
+      (setq pop-up-frames t)
+    #+END_SRC
+
+    But open a few buffers in different windows (same frame).
+
+    #+BEGIN_SRC emacs-lisp
+      (add-to-list 'display-buffer-alist
+                   '("^\\*Warning\\*$" . (display-buffer-pop-up-window . nil)))
+      (add-to-list 'display-buffer-alist
+                   '("^\\*Org Clock\\*$" . (display-buffer-pop-up-window . nil)))
+      (add-to-list 'display-buffer-alist
+                   '("^\\*Completions\\*$" . (display-buffer-pop-up-window . nil)))
+    #+END_SRC
+
+    By default, if a buffer is already being displayed, switch to its frame
+    instead of opening a new frame.
+
+    #+BEGIN_SRC emacs-lisp
+      (add-to-list 'display-buffer-alist
+                   '(".*" . ((display-buffer-reuse-window display-buffer-pop-up-frame)
+                             (reusable-frames . t))))
+    #+END_SRC
+
+
+*** File history
+
+    Remember lots of files that we previously visited.
+
+    #+BEGIN_SRC emacs-lisp
+      (setq recentf-max-saved-items 10000)
+    #+END_SRC
+
+
+** Text editing
+
+   No tabs.
+
+   #+BEGIN_SRC emacs-lisp
+     (setq-default indent-tabs-mode nil)
+   #+END_SRC
+
+   Set point at which text wraps.
+
+   #+BEGIN_SRC emacs-lisp
+     (setq-default fill-column 80)
+   #+END_SRC
+
+*** Navigation
+
+    Scroll just enough text to bring the cursor into view.
+
+    #+BEGIN_SRC emacs-lisp
+      (setq scroll-conservatively 1000)
+    #+END_SRC
+
+    Make it easy to see where I am by highlighting the line the cursor is on.
+
+    #+BEGIN_SRC emacs-lisp
+      (global-hl-line-mode 1)
+    #+END_SRC
+
+**** Jumping to specific spots (Ace jump)
+
+     #+BEGIN_SRC emacs-lisp
+       (require 'ace-jump-mode)
+     #+END_SRC
+
+     Respect case of hint text.
+
+     #+BEGIN_SRC emacs-lisp
+       (setq ace-jump-mode-case-fold nil)
+     #+END_SRC
+
+     Limit jump to current window.
+
+     #+BEGIN_SRC emacs-lisp
+       (setq ace-jump-mode-scope 'window)
+     #+END_SRC
+
+***** Keybindings
+
+      #+BEGIN_SRC emacs-lisp
+        (global-set-key "\C-xj" 'ace-jump-word-mode)
+      #+END_SRC
+
+*** Copying
+
+    Remember a good amount of copied text.
+
+    #+BEGIN_SRC emacs-lisp
+      (setq kill-ring-max 1000)
+    #+END_SRC
+
+**** X integration
+
+     It's nice to be able to easily copy/paste to/from other X applications.
+
+     #+BEGIN_SRC emacs-lisp
+       (setq x-select-enable-clipboard t)
+       (setq select-active-regions t)
+       (setq interprogram-paste-function 'x-cut-buffer-or-selection-value')
+     #+END_SRC
+
+*** Programming
+
+    Highlight matching parentheses.
+
+    #+BEGIN_SRC emacs-lisp
+      (show-paren-mode 1)
+    #+END_SRC
+
+    Make sure no trailing spaces are left when saving a file.
+
+    #+BEGIN_SRC emacs-lisp
+      (add-hook 'before-save-hook 'delete-trailing-whitespace)
+    #+END_SRC
