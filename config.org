@@ -193,6 +193,15 @@
       (setq kill-ring-max 1000)
     #+END_SRC
 
+*** Undo
+
+    I never really tried to use this much. But it's here as a reminder that I
+    need to look into it.
+
+    #+BEGIN_SRC emacs-lisp
+      (require 'undo-tree)
+    #+END_SRC
+
 **** X integration
 
      It's nice to be able to easily copy/paste to/from other X applications.
@@ -216,3 +225,45 @@
     #+BEGIN_SRC emacs-lisp
       (add-hook 'before-save-hook 'delete-trailing-whitespace)
     #+END_SRC
+
+*** Source control
+
+    Enable =git= integration.
+
+    #+BEGIN_SRC emacs-lisp
+      (require 'vc-git)
+    #+END_SRC
+
+    Use magit as the git interface.
+
+    #+BEGIN_SRC emacs-lisp
+      (require 'magit)
+    #+END_SRC
+
+    Don't revert a change without asking first.
+
+    #+BEGIN_SRC emacs-lisp
+      (setq magit-revert-item-confirm t)
+    #+END_SRC
+
+    Tell magit where to find repositories by default.
+
+    #+BEGIN_SRC emacs-lisp
+      (setq magit-repo-dirs '("~/projects/"))
+    #+END_SRC
+
+**** Buffer selection
+
+     Open the git commit message editor in a new window.
+
+     #+BEGIN_SRC emacs-lisp
+       (add-to-list 'display-buffer-alist
+                    '("^COMMIT_EDITMSG$" . (display-buffer-pop-up-window . nil)))
+     #+END_SRC
+
+     Replace the current buffer with the magit status buffer.
+
+     #+BEGIN_SRC emacs-lisp
+       (add-to-list 'display-buffer-alist
+                    '("^\\*magit:" . (display-buffer-same-window . nil)))
+     #+END_SRC

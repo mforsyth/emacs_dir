@@ -1,13 +1,3 @@
-(require 'magit)
-
-(setq magit-revert-item-confirm t)
-(setq magit-repo-dirs '("~/projects/"))
-
-(add-to-list 'display-buffer-alist
-             '("^\\*magit-edit-log\\*$" . (display-buffer-pop-up-window . nil)))
-(add-to-list 'display-buffer-alist
-             '("^\\*magit:" . (display-buffer-same-window . nil)))
-
 (defun magit/browser ()
   (interactive)
   (magit/make-status-frame)
