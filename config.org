@@ -123,7 +123,6 @@
                              (reusable-frames . t))))
     #+END_SRC
 
-
 *** File history
 
     Remember lots of files that we previously visited.
@@ -131,7 +130,6 @@
     #+BEGIN_SRC emacs-lisp
       (setq recentf-max-saved-items 10000)
     #+END_SRC
-
 
 ** Text editing
 
