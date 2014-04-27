@@ -58,9 +58,6 @@
 [submodule "vendor/mode-compile"]
 	path = vendor/mode-compile
 	url = git://github.com/emacsmirror/mode-compile.git
-[submodule "vendor/multi-web-mode"]
-	path = vendor/multi-web-mode
-	url = git://github.com/fgallina/multi-web-mode
 [submodule "vendor/org-mode"]
 	path = vendor/org-mode
 	url = git://orgmode.org/org-mode.git
