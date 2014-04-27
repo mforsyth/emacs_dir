@@ -112,9 +112,6 @@
 [submodule "vendor/multiple-cursors"]
 	path = vendor/multiple-cursors
 	url = git://github.com/magnars/multiple-cursors.el
-[submodule "vendor/expand-region"]
-	path = vendor/expand-region
-	url = git://github.com/magnars/expand-region.el
 [submodule "vendor/cider"]
 	path = vendor/cider
 	url = git://github.com/clojure-emacs/cider.git
