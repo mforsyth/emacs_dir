@@ -109,9 +109,6 @@
 [submodule "vendor/dash.el"]
 	path = vendor/dash.el
 	url = git://github.com/magnars/dash.el.git
-[submodule "vendor/multiple-cursors"]
-	path = vendor/multiple-cursors
-	url = git://github.com/magnars/multiple-cursors.el
 [submodule "vendor/cider"]
 	path = vendor/cider
 	url = git://github.com/clojure-emacs/cider.git
