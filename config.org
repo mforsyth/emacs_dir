@@ -120,7 +120,8 @@
     #+BEGIN_SRC emacs-lisp
       (add-to-list 'display-buffer-alist
                    '(".*" . ((display-buffer-reuse-window display-buffer-pop-up-frame)
-                             (reusable-frames . t))))
+                             (reusable-frames . t)))
+                   t)
     #+END_SRC
 
 *** File history
