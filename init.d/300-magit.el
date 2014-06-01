@@ -20,5 +20,5 @@
   (display-buffer (get-buffer-create name)
                   '(display-buffer-same-window . ())))
 
-(add-hook 'magit-log-edit-mode-hook
+(add-hook 'git-commit-mode-hook
           (lambda () (setq fill-column 70)))
