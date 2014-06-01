@@ -10,7 +10,6 @@
 (global-set-key (kbd "RET") 'newline-and-indent)
 (global-set-key "\M-y" 'helm-show-kill-ring)
 
-(global-set-key "\C-cf" 'vc-git-grep)
 (global-set-key "\C-cg" 'magit-status)
 (global-set-key "\C-cp" 'display-compilation)
 (global-set-key "\C-cs" 'eshell)
