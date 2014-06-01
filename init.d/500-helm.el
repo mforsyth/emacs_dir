@@ -31,3 +31,5 @@
   (interactive)
   (let ((current-prefix-arg t))
     (helm-do-grep)))
+
+(global-set-key "\C-cf" 'my/helm-recursive-grep)
