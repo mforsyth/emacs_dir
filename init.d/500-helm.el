@@ -15,6 +15,9 @@
 
 (helm-mode 1)
 
+(add-to-list 'display-buffer-alist
+             '("^\\*helm" . (display-buffer-pop-up-window . nil)))
+
 (dolist (kmap (list helm-map
                     helm-grep-mode-map
                     helm-read-file-map
