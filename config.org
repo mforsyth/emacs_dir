@@ -266,3 +266,19 @@
        (add-to-list 'display-buffer-alist
                     '("^\\*magit:" . (display-buffer-same-window . nil)))
      #+END_SRC
+** Project management
+*** Clock file
+
+    Make it possible to jump to the clock buffer.
+
+    #+BEGIN_SRC emacs-lisp
+      (defun display-clock ()
+        (interactive)
+        (find-file-other-frame (expand-file-name "~/.clock.org")))
+    #+END_SRC
+
+    And make it easy to jump to the clock buffer.
+
+    #+BEGIN_SRC emacs-lisp
+      (global-set-key "\C-ck" 'display-clock)
+    #+END_SRC

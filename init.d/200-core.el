@@ -9,10 +9,6 @@
    (with-current-buffer "*scratch*"
      (hack-dir-local-variables-non-file-buffer))))
 
-(defun display-clock ()
-  (interactive)
-  (find-file-other-frame (expand-file-name "~/.clock.org")))
-
 ; (defadvice raise-frame (around wmctrl activate)
 ;  (if (eq (window-system (ad-get-arg 0)) 'x)
 ;      (x-send-client-message nil 0 (ad-get-arg 0)
