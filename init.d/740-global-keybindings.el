@@ -11,7 +11,6 @@
 (global-set-key "\M-y" 'helm-show-kill-ring)
 
 (global-set-key "\C-cg" 'magit-status)
-(global-set-key "\C-cp" 'display-compilation)
 (global-set-key "\C-cs" 'eshell)
 (global-set-key "\C-ck" 'display-clock)
 (global-set-key "\C-w" 'backward-kill-word)

@@ -9,10 +9,6 @@
    (with-current-buffer "*scratch*"
      (hack-dir-local-variables-non-file-buffer))))
 
-(defun display-compilation ()
-  (interactive)
-  (display-buffer "*compilation*"))
-
 (defun display-clock ()
   (interactive)
   (find-file-other-frame (expand-file-name "~/.clock.org")))
