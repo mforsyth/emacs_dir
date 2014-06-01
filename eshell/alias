@@ -1,9 +1,12 @@
-alias hs heroku $* --remote staging
-alias hp heroku $* --remote production
-alias r rails $*
-alias z zeus $*
-alias k zeus rake $*
-alias dm k db:migrate db:test:prepare
-alias ddp k deploy:production $*
-alias dds k deploy:staging $*
+alias zr zeus rspec $*
 alias gdm z g migration $*
+alias dds k deploy:staging $*
+alias ddp k deploy:production $*
+alias dm k db:migrate db:test:prepare
+alias k zeus rake $*
+alias z zeus $*
+alias r rails $*
+alias hp heroku $* --remote production
+alias hs heroku $* --remote staging
+alias zc zeus cucumber $*
+alias bc bundle exec cucumber $*
