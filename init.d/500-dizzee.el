@@ -8,7 +8,7 @@
                :args ("start")
                :cd command-line-default-directory)
 
-(dz-defservice rails-server "rails-server"
+(dz-defservice rails-server "bin/rails-server"
                :cd command-line-default-directory)
 
 (dz-defservice-group rails-project (rails-server zeus))
