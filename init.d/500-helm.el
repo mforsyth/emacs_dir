@@ -15,7 +15,11 @@
 
 (helm-mode 1)
 
-(define-key helm-map "\C-w" 'backward-kill-word)
+(dolist (kmap (list helm-map
+                    helm-grep-mode-map
+                    helm-read-file-map
+                    helm-find-files-map))
+  (define-key kmap "\C-w" 'backward-kill-word))
 
 (defun helm-with-project ()
   (interactive)
