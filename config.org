@@ -225,6 +225,17 @@
      (add-hook 'before-save-hook 'delete-trailing-whitespace)
    #+END_SRC
 
+*** Vertical rule
+
+    Let modes display a vertical rule.
+
+    #+BEGIN_SRC emacs-lisp
+      (require 'fill-column-indicator)
+
+      (setq fci-rule-width 1)
+      (setq fci-rule-color "#303030")
+    #+END_SRC
+
 ** Source control
 
    Enable =git= integration.
