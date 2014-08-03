@@ -178,6 +178,26 @@
        (setq ace-jump-mode-scope 'window)
      #+END_SRC
 
+*** Markdown
+
+    #+BEGIN_SRC emacs-lisp
+      (require 'markdown-mode)
+    #+END_SRC
+
+    Automatically switch to markdown mode given certain file extensions:
+
+    #+BEGIN_SRC emacs-lisp
+      (add-to-list 'auto-mode-alist '("\.md$" . markdown-mode))
+    #+END_SRC
+
+    Markdown inserts explicit line breaks when you hard-wrap a paragraph. We
+    want to avoid that and let the design of the page decide where the text
+    should wrap.
+
+    #+BEGIN_SRC emacs-lisp
+      (add-hook 'markdown-mode-hook (lambda () (setq fill-column nil)))
+    #+END_SRC
+
 ***** Keybindings
 
       #+BEGIN_SRC emacs-lisp
