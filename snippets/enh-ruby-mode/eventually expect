@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: eventually expect
+# key: ee
+# --
+eventually { expect(${actual}).${to} ${verification} }

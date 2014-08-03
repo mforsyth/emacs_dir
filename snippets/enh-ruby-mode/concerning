@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: concerning
+# key: concerning
+# --
+concerning :${name} do
+  $0
+end
