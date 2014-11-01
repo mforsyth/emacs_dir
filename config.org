@@ -256,6 +256,31 @@
       (setq fci-rule-color "#303030")
     #+END_SRC
 
+** Programming languanges
+*** Cucumber
+
+   #+BEGIN_SRC emacs-lisp
+     (require 'feature-mode)
+   #+END_SRC
+
+   Handle =*.feature= files with =feature-mode=.
+
+   #+BEGIN_SRC emacs-lisp
+     (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+   #+END_SRC
+
+   We want to disregard all settings in =cucumber.yml= and use our own.
+
+   #+BEGIN_SRC emacs-lisp
+     (setq feature-cucumber-command "bin/cucumber -rfeatures -P -f pretty {options} {feature}")
+   #+END_SRC
+
+   Enable =fci-mode= so we know when steps are getting too big.
+
+   #+BEGIN_SRC emacs-lisp
+     (add-hook 'feature-mode-hook 'fci-mode)
+   #+END_SRC
+
 ** Source control
 
    Enable =git= integration.
