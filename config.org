@@ -262,6 +262,12 @@
      (add-hook 'feature-mode-hook 'fci-mode)
    #+END_SRC
 
+*** Slim
+
+    #+BEGIN_SRC emacs-lisp
+      (require 'slim-mode)
+    #+END_SRC
+
 ** Source control
 
    Enable =git= integration.
