@@ -28,6 +28,14 @@
      (require 'base16-default-theme)
    #+END_SRC
 
+   We use evil-mode.
+
+   #+BEGIN_SRC emacs-lisp
+     (require 'evil)
+
+     (evil-mode 1)
+   #+END_SRC
+
 *** Frame configuration
 
     I don't need menus, toolbars and scrollbars.
@@ -108,14 +116,6 @@
     #+END_SRC
 
 ** Text editing
-
-   We use evil-mode.
-
-   #+BEGIN_SRC emacs-lisp
-     (require 'evil)
-
-     (evil-mode 1)
-   #+END_SRC
 
    No tabs.
 
