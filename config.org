@@ -67,22 +67,22 @@
       (set-face-attribute 'default nil :height 100 :family "Envy Code R")
     #+END_SRC
 
-**** Navigation
+*** Window Navigation
 
-     Since I disabled scrollbars, I'd like at least to see where I am in the
-     file.
+    Since I disabled scrollbars, I'd like at least to see where I am in the
+    file.
 
-     #+BEGIN_SRC emacs-lisp
-       (column-number-mode 1)
-       (line-number-mode 1)
-     #+END_SRC
+    #+BEGIN_SRC emacs-lisp
+      (column-number-mode 1)
+      (line-number-mode 1)
+    #+END_SRC
 
-     Make it possible to navigate windows directionally.
+    Make it possible to navigate windows directionally.
 
-     #+BEGIN_SRC emacs-lisp
-       (global-set-key (kbd "s-h") 'windmove-left)
-       (global-set-key (kbd "s-l") 'windmove-right)
-     #+END_SRC
+    #+BEGIN_SRC emacs-lisp
+      (global-set-key (kbd "s-h") 'windmove-left)
+      (global-set-key (kbd "s-l") 'windmove-right)
+    #+END_SRC
 
 *** Minibuffer
 
