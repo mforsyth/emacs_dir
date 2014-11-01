@@ -139,6 +139,13 @@
      (setq-default fill-column 80)
    #+END_SRC
 
+   Allow easy exchange of text units with Evil.
+
+   #+BEGIN_SRC emacs-lisp
+     (require 'evil-exchange)
+     (evil-exchange-install)
+   #+END_SRC
+
 *** Navigation
 
     Scroll just enough text to bring the cursor into view.
