@@ -216,6 +216,16 @@
      (add-hook 'before-save-hook 'delete-trailing-whitespace)
    #+END_SRC
 
+*** Flycheck
+
+    Provides on the fly syntax checking/linting.
+
+    #+BEGIN_SRC emacs-lisp
+      (require 'flycheck)
+
+      (add-hook 'after-init-hook #'global-flycheck-mode)
+    #+END_SRC
+
 *** Vertical rule
 
     Let modes display a vertical rule.
