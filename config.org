@@ -70,8 +70,6 @@
        (line-number-mode 1)
      #+END_SRC
 
-**** Keybindings
-
      Make it possible to navigate windows directionally.
 
      #+BEGIN_SRC emacs-lisp
@@ -95,8 +93,6 @@
     #+BEGIN_SRC emacs-lisp
       (defalias 'yes-or-no-p 'y-or-n-p)
     #+END_SRC
-
-**** Keybindings
 
      Use =C-w= to erase words.
 
@@ -158,6 +154,12 @@
        (setq ace-jump-mode-scope 'window)
      #+END_SRC
 
+     Set shortcut to jump to word.
+
+     #+BEGIN_SRC emacs-lisp
+       (global-set-key "\C-xj" 'ace-jump-word-mode)
+     #+END_SRC
+
 *** Markdown
 
     #+BEGIN_SRC emacs-lisp
@@ -177,12 +179,6 @@
     #+BEGIN_SRC emacs-lisp
       (add-hook 'markdown-mode-hook (lambda () (setq fill-column nil)))
     #+END_SRC
-
-***** Keybindings
-
-      #+BEGIN_SRC emacs-lisp
-        (global-set-key "\C-xj" 'ace-jump-word-mode)
-      #+END_SRC
 
 *** Copying
 
