@@ -118,3 +118,9 @@
 [submodule "vendor/flycheck"]
 	path = vendor/flycheck
 	url = git://github.com/flycheck/flycheck.git
+[submodule "vendor/emacs-async"]
+	path = vendor/emacs-async
+	url = git://github.com/jwiegley/emacs-async.git
+[submodule "vendor/queue"]
+	path = vendor/queue
+	url = git://github.com/emacsmirror/queue.git
