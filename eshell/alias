@@ -1,13 +1,14 @@
-alias cl zeus rake log:clear
-alias bc bundle exec cucumber $*
-alias zc zeus cucumber $*
-alias hs heroku $* --remote staging
-alias hp heroku $* --remote production
-alias r rails $*
-alias z zeus $*
-alias k zeus rake $*
-alias dm k db:migrate db:test:prepare
-alias ddp k deploy:production $*
-alias dds k deploy:staging $*
-alias gdm z g migration $*
+alias t ctags-exuberant -Re app apps lib features/support spec/support $*
 alias zr zeus rspec $*
+alias gdm z g migration $*
+alias dds k deploy:staging $*
+alias ddp k deploy:production $*
+alias dm k db:migrate db:test:prepare
+alias k zeus rake $*
+alias z zeus $*
+alias r rails $*
+alias hp heroku $* --remote production
+alias hs heroku $* --remote staging
+alias zc zeus cucumber $*
+alias bc bundle exec cucumber $*
+alias cl zeus rake log:clear
