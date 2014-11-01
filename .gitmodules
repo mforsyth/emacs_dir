@@ -124,3 +124,6 @@
 [submodule "vendor/queue"]
 	path = vendor/queue
 	url = git://github.com/emacsmirror/queue.git
+[submodule "vendor/evil"]
+	path = vendor/evil
+	url = git://gitorious.org/evil/evil.git

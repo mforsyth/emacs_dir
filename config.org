@@ -110,6 +110,14 @@
 
 ** Text editing
 
+   We use evil-mode.
+
+   #+BEGIN_SRC emacs-lisp
+     (require 'evil)
+
+     (evil-mode 1)
+   #+END_SRC
+
    No tabs.
 
    #+BEGIN_SRC emacs-lisp
