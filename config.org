@@ -38,8 +38,7 @@
       (setq initial-frame-alist
             (setq default-frame-alist '((menu-bar-lines . 0)
                                         (tool-bar-lines . 0)
-                                        (vertical-scroll-bars . nil)
-                                        (cursor-type . bar))))
+                                        (vertical-scroll-bars . nil))))
     #+END_SRC
 
     Don't want the cursor to blink.
