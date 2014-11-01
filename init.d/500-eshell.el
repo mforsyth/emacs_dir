@@ -4,6 +4,3 @@
 
 (defun set-editor ()
   (setenv "EDITOR" (concat "emacsclient -c -s " server-name)))
-
-(add-to-list 'display-buffer-alist
-             `("^\\*eshell" . ,init/open-buffer-in-frame))

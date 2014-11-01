@@ -95,35 +95,6 @@
        (define-key minibuffer-local-map "\C-w" 'backward-kill-word)
      #+END_SRC
 
-*** Buffer selection
-
-    Show frames by default.
-
-    #+BEGIN_SRC emacs-lisp
-      (setq pop-up-frames t)
-    #+END_SRC
-
-    But open a few buffers in different windows (same frame).
-
-    #+BEGIN_SRC emacs-lisp
-      (add-to-list 'display-buffer-alist
-                   '("^\\*Warning\\*$" . (display-buffer-pop-up-window . nil)))
-      (add-to-list 'display-buffer-alist
-                   '("^\\*Org Clock\\*$" . (display-buffer-pop-up-window . nil)))
-      (add-to-list 'display-buffer-alist
-                   '("^\\*Completions\\*$" . (display-buffer-pop-up-window . nil)))
-    #+END_SRC
-
-    By default, if a buffer is already being displayed, switch to its frame
-    instead of opening a new frame.
-
-    #+BEGIN_SRC emacs-lisp
-      (add-to-list 'display-buffer-alist
-                   '(".*" . ((display-buffer-reuse-window display-buffer-pop-up-frame)
-                             (reusable-frames . t)))
-                   t)
-    #+END_SRC
-
 *** File history
 
     Remember lots of files that we previously visited.
