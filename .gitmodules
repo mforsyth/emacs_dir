@@ -133,3 +133,6 @@
 [submodule "vendor/powerline"]
 	path = vendor/powerline
 	url = git://github.com/milkypostman/powerline.git
+[submodule "vendor/evil-surround"]
+	path = vendor/evil-surround
+	url = git://github.com/timcharper/evil-surround.git

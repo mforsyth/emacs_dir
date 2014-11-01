@@ -224,6 +224,13 @@
       (require 'undo-tree)
     #+END_SRC
 
+*** Managing pairs
+
+   #+BEGIN_SRC emacs-lisp
+     (require 'evil-surround)
+     (global-evil-surround-mode 1)
+   #+END_SRC
+
 ** Programming
 
    Highlight matching parentheses.
