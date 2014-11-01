@@ -280,6 +280,13 @@
       (define-key evil-normal-state-map "K" 'evil-jump-out-args)
     #+END_SRC
 
+*** Block matching
+
+    #+BEGIN_SRC emacs-lisp
+      (require 'evil-matchit)
+      (global-evil-matchit-mode 1)
+    #+END_SRC
+
 *** Flycheck
 
     Provides on the fly syntax checking/linting.

@@ -142,3 +142,6 @@
 [submodule "vendor/evil-args"]
 	path = vendor/evil-args
 	url = git://github.com/wcsmith/evil-args.git
+[submodule "vendor/evil-matchit"]
+	path = vendor/evil-matchit
+	url = git://github.com/redguardtoo/evil-matchit.git
