@@ -84,6 +84,16 @@
       (global-set-key (kbd "s-l") 'windmove-right)
     #+END_SRC
 
+*** Modeline
+
+    Since we use Evil, use =evil-powerline=.
+
+    #+BEGIN_SRC emacs-lisp
+      (require 'powerline)
+      (require 'powerline-evil)
+      (powerline-evil-center-color-theme)
+    #+END_SRC
+
 *** Minibuffer
 
     Disambiguate file names. This will show files in a format like

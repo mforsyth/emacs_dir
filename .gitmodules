@@ -127,3 +127,9 @@
 [submodule "vendor/evil"]
 	path = vendor/evil
 	url = git://gitorious.org/evil/evil.git
+[submodule "vendor/powerline-evil"]
+	path = vendor/powerline-evil
+	url = git://github.com/raugturi/powerline-evil.git
+[submodule "vendor/powerline"]
+	path = vendor/powerline
+	url = git://github.com/milkypostman/powerline.git
