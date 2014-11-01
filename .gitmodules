@@ -112,3 +112,9 @@
 [submodule "vendor/wanderlust"]
 	path = vendor/wanderlust
 	url = git://github.com/wanderlust/wanderlust.git
+[submodule "vendor/emacs-slim"]
+	path = vendor/emacs-slim
+	url = git://github.com/slim-template/emacs-slim.git
+[submodule "vendor/flycheck"]
+	path = vendor/flycheck
+	url = git://github.com/flycheck/flycheck.git

@@ -10,7 +10,7 @@
 
 ** Core
 
-   Disable Emacs' "splash screen"
+   Disable Emacs' "splash screen".
 
    #+BEGIN_SRC emacs-lisp
      (setq inhibit-startup-screen t)
