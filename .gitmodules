@@ -139,3 +139,6 @@
 [submodule "vendor/evil-exchange"]
 	path = vendor/evil-exchange
 	url = git://github.com/Dewdrops/evil-exchange.git
+[submodule "vendor/evil-args"]
+	path = vendor/evil-args
+	url = git://github.com/wcsmith/evil-args.git
