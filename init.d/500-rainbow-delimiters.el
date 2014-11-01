@@ -1,3 +1,4 @@
 (require 'rainbow-delimiters)
 
-(global-rainbow-delimiters-mode)
+(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'enh-ruby-mode-hook 'rainbow-delimiters-mode)
