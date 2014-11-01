@@ -70,6 +70,15 @@
        (line-number-mode 1)
      #+END_SRC
 
+**** Keybindings
+
+     Make it possible to navigate windows directionally.
+
+     #+BEGIN_SRC emacs-lisp
+       (global-set-key (kbd "s-h") 'windmove-left)
+       (global-set-key (kbd "s-l") 'windmove-right)
+     #+END_SRC
+
 *** Minibuffer
 
     Disambiguate file names. This will show files in a format like
