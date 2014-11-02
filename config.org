@@ -125,6 +125,23 @@
       (setq recentf-max-saved-items 10000)
     #+END_SRC
 
+*** Evil
+
+    Setup a few default keybindings.
+
+    #+BEGIN_SRC emacs-lisp
+      (define-key evil-normal-state-map "+" 'universal-argument)
+      (define-key evil-normal-state-map "-" 'negative-argument)
+      (define-key evil-normal-state-map "\C-u" 'evil-scroll-up)
+
+      (define-key evil-visual-state-map "+" 'universal-argument)
+      (define-key evil-visual-state-map "-" 'negative-argument)
+      (define-key evil-visual-state-map "\C-u" 'evil-scroll-up)
+
+      (define-key evil-insert-state-map "\C-e" 'move-end-of-line)
+      (define-key evil-insert-state-map (kbd "RET") 'newline-and-indent)
+    #+END_SRC
+
 ** Text editing
 
    No tabs.
