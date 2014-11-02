@@ -28,7 +28,14 @@
      (require 'base16-default-theme)
    #+END_SRC
 
-   We use evil-mode.
+   Set up a good shift width for Evil's >> command. This needs to be done
+   before we activate =evil-mode=.
+
+   #+BEGIN_SRC emacs-lisp
+     (setq evil-shift-width 2)
+   #+END_SRC
+
+   Now start =evil=.
 
    #+BEGIN_SRC emacs-lisp
      (require 'evil)
