@@ -419,6 +419,13 @@
      (define-key magit-status-mode-map "d" 'magit-discard-item)
    #+END_SRC
 
+   Use proper evil modes for specific git buffers.
+
+   #+BEGIN_SRC emacs-lisp
+     (evil-set-initial-state 'git-commit-mode 'insert)
+     (evil-set-initial-state 'git-rebase-mode 'emacs)
+   #+END_SRC
+
 *** Buffer selection
 
     Open the git commit message editor in a new window.
