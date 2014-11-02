@@ -475,3 +475,10 @@
     #+BEGIN_SRC emacs-lisp
       (global-set-key "\C-ck" 'display-clock)
     #+END_SRC
+** Shell
+
+   Have keybindings behave like emacs.
+
+   #+BEGIN_SRC emacs-lisp
+     (evil-set-initial-state 'eshell-mode 'emacs)
+   #+END_SRC
