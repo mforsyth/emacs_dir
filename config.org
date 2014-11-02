@@ -399,6 +399,26 @@
                (lambda () (setq fill-column 70)))
    #+END_SRC
 
+   Setup evil-friendly keys.
+
+   #+BEGIN_SRC emacs-lisp
+     (dolist (mode (list magit-status-mode-map
+                         magit-log-mode-map
+                         magit-commit-mode-map))
+       (define-key mode "/" 'evil-search-forward)
+       (define-key mode "?" 'evil-search-backward)
+       (define-key mode "n" 'evil-search-next)
+       (define-key mode "N" 'evil-search-previous)
+       (define-key mode "\C-d" 'evil-scroll-down)
+       (define-key mode "\C-u" 'evil-scroll-up)
+       (define-key mode "\C-f" 'evil-scroll-page-down)
+       (define-key mode "\C-b" 'evil-scroll-page-up)
+       (define-key mode "j" 'magit-goto-next-section)
+       (define-key mode "k" 'magit-goto-previous-section))
+
+     (define-key magit-status-mode-map "d" 'magit-discard-item)
+   #+END_SRC
+
 *** Buffer selection
 
     Open the git commit message editor in a new window.
