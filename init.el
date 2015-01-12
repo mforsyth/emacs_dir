@@ -20,8 +20,5 @@
 
 (add-to-list 'load-path init-path)
 
-(require 'org)
-(org-babel-load-file (concat user-emacs-directory "config.org"))
-
 (dolist (path (directory-files init-path t "^[[:alnum:]]"))
   (load-library (file-name-sans-extension (file-name-nondirectory path))))

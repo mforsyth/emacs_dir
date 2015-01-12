@@ -16,12 +16,6 @@
 [submodule "vendor/fill-column-indicator"]
 	path = vendor/fill-column-indicator
 	url = git://github.com/emacsmirror/fill-column-indicator.git
-[submodule "vendor/gh.el"]
-	path = vendor/gh.el
-	url = git://github.com/sigma/gh.el
-[submodule "vendor/gist-el"]
-	path = vendor/gist-el
-	url = git://github.com/defunkt/gist.el
 [submodule "vendor/haml-mode"]
 	path = vendor/haml-mode
 	url = git://github.com/nex3/haml-mode.git
@@ -124,24 +118,9 @@
 [submodule "vendor/queue"]
 	path = vendor/queue
 	url = git://github.com/emacsmirror/queue.git
-[submodule "vendor/evil"]
-	path = vendor/evil
-	url = git://gitorious.org/evil/evil.git
-[submodule "vendor/powerline-evil"]
-	path = vendor/powerline-evil
-	url = git://github.com/raugturi/powerline-evil.git
-[submodule "vendor/powerline"]
-	path = vendor/powerline
-	url = git://github.com/milkypostman/powerline.git
-[submodule "vendor/evil-surround"]
-	path = vendor/evil-surround
-	url = git://github.com/timcharper/evil-surround.git
-[submodule "vendor/evil-exchange"]
-	path = vendor/evil-exchange
-	url = git://github.com/Dewdrops/evil-exchange.git
-[submodule "vendor/evil-args"]
-	path = vendor/evil-args
-	url = git://github.com/wcsmith/evil-args.git
-[submodule "vendor/evil-matchit"]
-	path = vendor/evil-matchit
-	url = git://github.com/redguardtoo/evil-matchit.git
+[submodule "vendor/zenburn-emacs"]
+	path = vendor/zenburn-emacs
+	url = git@github.com:bbatsov/zenburn-emacs.git
+[submodule "init.d/markdown-mode"]
+	path = init.d/markdown-mode
+	url = git@github.com:defunkt/markdown-mode.git
