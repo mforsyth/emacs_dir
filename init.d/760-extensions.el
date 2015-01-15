@@ -5,3 +5,5 @@
 (setq auto-mode-alist (cons '("\\.yml\\'" . yaml-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.hamlc\\'" . haml-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.js\\'" . javascript-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.jq\\'" . javascript-mode) auto-mode-alist))
+
