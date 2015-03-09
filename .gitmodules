@@ -130,3 +130,6 @@
 [submodule "vendor/dockerfile-mode"]
 	path = vendor/dockerfile-mode
 	url = git@github.com:spotify/dockerfile-mode.git
+[submodule "vendor/groovy-mode"]
+	path = vendor/groovy-mode
+	url = git@github.com:Groovy-Emacs-Modes/groovy-emacs-modes.git
