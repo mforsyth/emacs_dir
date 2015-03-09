@@ -124,6 +124,9 @@
 [submodule "init.d/markdown-mode"]
 	path = init.d/markdown-mode
 	url = git@github.com:defunkt/markdown-mode.git
+[submodule "vendor/jade-mode"]
+	path = vendor/jade-mode
+	url = git@github.com:brianc/jade-mode.git
 [submodule "vendor/dockerfile-mode"]
 	path = vendor/dockerfile-mode
 	url = git@github.com:spotify/dockerfile-mode.git
