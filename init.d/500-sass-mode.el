@@ -1,4 +1,5 @@
 (autoload 'sass-mode "sass-mode")
+(require 'sass-mode)
 
 (add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
 (add-to-list 'auto-mode-alist '("\\.sass.erb$" . sass-mode))
